@@ -1,36 +1,60 @@
+#define _USE_MATH_DEFINES
+#include <math.h>
 #ifdef __APPLE__
 #include <GLUT/glut.h>
 #else
 #include <GL/glut.h>
 #endif
-
 #include <stdlib.h>
 
+//Header
+#include "player_control.h"
+#include "bola_mechanic.h"
+#include "asset.h"
 
-/* GLUT callback Handlers */
+
+/// Global variables
+
 
 static void display(void)
 {
-    glClearColor(1.0f, 1.0f, 1.0f, 1.0f);
+	//BACKGROUND
+	glClearColor(10,10,10,10);
 	glClear(GL_COLOR_BUFFER_BIT);
+    bola bola1;
+    bola1.graphic();
+    bola1.movement();
 
-    glBegin(GL_LINES);
-    glColor3f(0, 0, 0);
-    glVertex2f(1, 1);
-    glVertex2f(10, 100);
-    glEnd();
-
-    glutSwapBuffers();
+	glFlush();
+	glutSwapBuffers();
 }
 
-int main(int argc, char** argv){
+static void idle(void)
+{
+	glutPostRedisplay();
+}
+
+int main(int argc, char* argv[])
+{
+    int width_Screen = 640;
+    int height_Screen = 480;
+
 	glutInit(&argc, argv);
-	glutInitDisplayMode(GLUT_RGB | GLUT_DOUBLE);
-	glutInitWindowSize(640, 480);
-	glutInitWindowPosition(0,0);
-	glutCreateWindow("Hello world!");
+	glutInitWindowPosition(100, 100);
+	glutInitWindowSize((width_Screen*1.5), (height_Screen*1.5));
+	glutInitDisplayMode(GLUT_RGBA | GLUT_DOUBLE | GLUT_DEPTH);
+
+	glutCreateWindow("sepak bola");
+
+	gluOrtho2D(0, width_Screen, 0, height_Screen);
 	glutDisplayFunc(display);
-	gluOrtho2D(0, 640, 0, 480);
+
+	//BERGERAK
+	glutKeyboardFunc(key);
+	glutSpecialFunc(specialKey);
+	glutIdleFunc(idle);
+
 	glutMainLoop();
-	return 0;
+
+	return EXIT_SUCCESS;
 }

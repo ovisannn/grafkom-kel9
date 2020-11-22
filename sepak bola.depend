@@ -219,3 +219,41 @@
 	<stddef.h>
 	<GL/gl.h>
 
+1606004916 source:d:\kuliah & tugasnya\.semester 3 -unej-\grafkom\project game\grafkom-kel9\main.cpp
+	<math.h>
+	<GLUT/glut.h>
+	<GL/glut.h>
+	<stdlib.h>
+	"player_control.h"
+	"bola_mechanic.h"
+
+1341006776 c:\program files (x86)\codeblocks\mingw\include\stdio.h
+	<_mingw.h>
+	<stddef.h>
+	<stdarg.h>
+	<sys/types.h>
+
+1341006780 c:\program files (x86)\codeblocks\mingw\include\sys\types.h
+	<_mingw.h>
+	<stddef.h>
+
+1341006774 c:\program files (x86)\codeblocks\mingw\include\math.h
+	<_mingw.h>
+
+1605406019 source:d:\kuliah & tugasnya\.semester 3 -unej-\grafkom\project game\grafkom-kel9\ballmechanic.cpp
+	<GLUT/glut.h>
+	<GL/glut.h>
+	<stdlib.h>
+	<math.h>
+	<windows.h>
+
+1606001981 source:d:\kuliah & tugasnya\.semester 3 -unej-\grafkom\project game\grafkom-kel9\playercontrol.c
+	<math.h>
+	<GLUT/glut.h>
+	<GL/glut.h>
+	<stdlib.h>
+
+1606003229 d:\kuliah & tugasnya\.semester 3 -unej-\grafkom\project game\grafkom-kel9\player_control.h
+
+1606006909 d:\kuliah & tugasnya\.semester 3 -unej-\grafkom\project game\grafkom-kel9\bola_mechanic.h
+
