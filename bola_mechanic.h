@@ -5,7 +5,7 @@ class bola {
 public:
     //graphic and position variable
     float theta;
-    int ball_radius = 50;
+    int ball_radius = 15;
     int x_position = 80;
     int y_position = 80;
 
@@ -30,7 +30,7 @@ public:
         };
         glEnd();
 
-        glBegin(GL_POLYGON);
+        //glBegin(GL_POLYGON);
     };
 
 

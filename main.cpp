@@ -21,6 +21,9 @@ static void display(void)
 	//BACKGROUND
 	glClearColor(10,10,10,10);
 	glClear(GL_COLOR_BUFFER_BIT);
+
+    lapangan();
+
     bola bola1;
     bola1.graphic();
     bola1.movement();
