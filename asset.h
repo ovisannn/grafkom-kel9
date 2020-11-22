@@ -1,0 +1,6 @@
+#ifndef ASSET_H_INCLUDED
+#define ASSET_H_INCLUDED
+
+//TARUH KODE DI SINI
+
+#endif // ASSET_H_INCLUDED
