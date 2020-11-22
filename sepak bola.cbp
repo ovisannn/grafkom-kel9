@@ -42,11 +42,9 @@
 			<Add library="gdi32" />
 			<Add directory="C:/Program Files (x86)/CodeBlocks/MinGW/lib" />
 		</Linker>
-		<Unit filename="ballMechanic.cpp" />
+		<Unit filename="asset.h" />
+		<Unit filename="bola_mechanic.h" />
 		<Unit filename="main.cpp" />
-		<Unit filename="playerControl.c">
-			<Option compilerVar="CC" />
-		</Unit>
 		<Unit filename="player_control.h" />
 		<Extensions>
 			<code_completion />

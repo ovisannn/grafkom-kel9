@@ -9,6 +9,9 @@ public:
     int x_position = 80;
     int y_position = 80;
 
+    //collisions variable
+
+
     //movement speed variable
     float general_speed = 0.5;
     float xSpeed = general_speed;
@@ -17,25 +20,23 @@ public:
 
 //grafik bola
     void graphic(){
-    glBegin(GL_POLYGON);
-    glColor3b(0,0,0);
-    for (int i= 0; i<360; i++){
-        theta = i*3.142/180;
-        float x_ball = ball_radius*cos(theta);
-        float y_ball = ball_radius*sin(theta);
-        glVertex2f((x_position+x_ball),(y_position+y_ball));
+        glBegin(GL_POLYGON);
+        glColor3b(0,0,0);
+        for (int i= 0; i<360; i++){
+            theta = i*3.142/180;
+            float x_ball = ball_radius*cos(theta);
+            float y_ball = ball_radius*sin(theta);
+            glVertex2f((x_position+x_ball),(y_position+y_ball));
+        };
+        glEnd();
+
+        glBegin(GL_POLYGON);
     };
-    glEnd();
-    };
+
+
 
 //pergerakan bola
     void movement(){
-    if(ball_radius == 640 || ball_radius == 0){
-        xSpeed = xSpeed*-1;
-    }
-    else{
-        glTranslated(xSpeed,0,0);
-    };
 
     };
 };
