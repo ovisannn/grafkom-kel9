@@ -109,8 +109,14 @@ void lapangann() {
 
 }
 
+void gawang(){
+    segiEmpat(570, 270, 600, 270, 602, 285, 585, 285);
+    segiEmpat(570, 170, 600, 170, 602, 185, 585, 185);
+}
+
 void lapangan(){
     lapangann();
 	rangkai();
 
+	gawang();
 }

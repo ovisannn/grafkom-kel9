@@ -44,7 +44,9 @@
 		</Linker>
 		<Unit filename="asset.h" />
 		<Unit filename="bola_mechanic.h" />
+		<Unit filename="garis_putih_lapangan.h" />
 		<Unit filename="main.cpp" />
+		<Unit filename="papan_score.h" />
 		<Unit filename="player_control.h" />
 		<Extensions>
 			<code_completion />
