@@ -16,6 +16,16 @@ void segiEmpat(float titikA1, float titikB1, float titikA2, float titikB2, float
 	glEnd();
 }
 
+void outline(float titikA1, float titikB1, float titikA2, float titikB2, float titikA3, float titikB3, float titikA4, float titikB4) {
+	glBegin(GL_LINE_LOOP);
+
+	glVertex2f(titikA1, titikB1);
+	glVertex2f(titikA2, titikB2);
+	glVertex2f(titikA3, titikB3);
+	glVertex2f(titikA4, titikB4);
+	glEnd();
+}
+
 void lapangan1() {
 	segiEmpat(70, 70, 120, 70, 120, 120, 70, 120);
 	segiEmpat(170, 70, 220, 70, 220, 120, 170, 120);
@@ -110,8 +120,17 @@ void lapangann() {
 }
 
 void gawang(){
-    segiEmpat(570, 270, 600, 270, 602, 285, 585, 285);
-    segiEmpat(570, 170, 600, 170, 602, 185, 585, 185);
+    //KANAN
+    glLineWidth(3);
+	glColor3f(0.8, 0.8, 0.8);
+    outline(570, 270, 600, 270, 602, 285, 585, 285);
+    outline(570, 170, 600, 170, 602, 185, 585, 185);
+    outline(585, 285, 602, 285, 602, 185, 585, 185);
+
+    //KIRI
+    outline(70, 270, 40, 270, 38, 285, 55, 285);
+    outline(70, 170, 40, 170, 38, 185, 55, 185);
+    outline(38, 285, 55, 285, 55, 185, 38, 185);
 }
 
 void lapangan(){
