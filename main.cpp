@@ -11,6 +11,7 @@
 #include "player_control.h"
 #include "bola_mechanic.h"
 #include "asset.h"
+#include "garis_putih_lapangan.h"
 
 
 /// Global variables
@@ -23,6 +24,7 @@ static void display(void)
 	glClear(GL_COLOR_BUFFER_BIT);
 
     lapangan();
+    garis_putih_lapangan();
 
     bola bola1;
     bola1.graphic();
