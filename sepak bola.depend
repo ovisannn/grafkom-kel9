@@ -257,18 +257,20 @@
 
 1606006909 d:\kuliah & tugasnya\.semester 3 -unej-\grafkom\project game\grafkom-kel9\bola_mechanic.h
 
-1606009838 source:f:\kuliah luuuur\tugas kuliah\semester 3\grafika komputer (pr)\grafkom-kel9\main.cpp
+1606360048 source:f:\kuliah luuuur\tugas kuliah\semester 3\grafika komputer (pr)\grafkom-kel9\main.cpp
 	<math.h>
 	<GLUT/glut.h>
 	<GL/glut.h>
 	<stdlib.h>
+	<iostream>
 	"player_control.h"
 	"bola_mechanic.h"
 	"asset.h"
+	"garis_putih_lapangan.h"
 
 1606008599 f:\kuliah luuuur\tugas kuliah\semester 3\grafika komputer (pr)\grafkom-kel9\player_control.h
 
-1606009522 f:\kuliah luuuur\tugas kuliah\semester 3\grafika komputer (pr)\grafkom-kel9\bola_mechanic.h
+1606360048 f:\kuliah luuuur\tugas kuliah\semester 3\grafika komputer (pr)\grafkom-kel9\bola_mechanic.h
 
 1606183702 f:\kuliah luuuur\tugas kuliah\semester 3\grafika komputer (pr)\grafkom-kel9\asset.h
 
@@ -290,4 +292,6 @@
 1606350633 c:\users\ovi sanjaya\documents\github\grafkom-kel9\asset.h
 
 1606350633 c:\users\ovi sanjaya\documents\github\grafkom-kel9\garis_putih_lapangan.h
+
+1606356063 f:\kuliah luuuur\tugas kuliah\semester 3\grafika komputer (pr)\grafkom-kel9\garis_putih_lapangan.h
 
