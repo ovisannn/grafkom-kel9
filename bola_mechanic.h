@@ -3,8 +3,8 @@
 //graphic position variable
 float theta;
 int ball_radius = 18;
-int x_position = 100;
-int y_position = 100;
+float x_position = 100;
+float y_position = 100;
 
 //collider variable
 float x_currentPosRight = x_position+ball_radius;
@@ -13,7 +13,7 @@ float y_currentPosUp = y_position+ball_radius;
 float y_currentPosDown = y_position-ball_radius;
 
 //movement speed variable
-float general_speed = 1;
+float general_speed = 0.3;
 float xSpeed = general_speed;
 float ySpeed = general_speed;
 
@@ -44,7 +44,7 @@ public:
             x_currentPosLeft +=xSpeed;
             y_currentPosUp +=ySpeed ;
             y_currentPosDown +=ySpeed;
-            cout<<x_currentPosLeft<<endl;
+            //cout<<x_currentPosLeft<<endl;
             if (x_currentPosRight >= 570 || x_currentPosLeft<=70){
                 xSpeed = xSpeed*-1;
                 }

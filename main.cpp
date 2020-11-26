@@ -6,7 +6,8 @@
 #include <GL/glut.h>
 #endif
 #include <stdlib.h>
-
+#include <iostream>
+using namespace std;
 //Header
 #include "player_control.h"
 #include "bola_mechanic.h"
@@ -27,7 +28,6 @@ static void display(void)
     garis_putih_lapangan();
 
     bola bola1;
-    bola1.graphic();
     bola1.movement();
 
 	glFlush();
