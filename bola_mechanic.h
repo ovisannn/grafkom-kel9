@@ -3,8 +3,8 @@
 //graphic position variable
 float theta;
 int ball_radius = 18;
-float x_position = 100;
-float y_position = 100;
+float x_position = 320;
+float y_position = 220;
 
 //collider variable
 float x_currentPosRight = x_position+ball_radius;
@@ -19,6 +19,7 @@ float ySpeed = general_speed;
 
 class bola {
 public:
+
 //grafik bola
     void graphic(){
         //gambar
@@ -53,6 +54,18 @@ public:
                 }
     };
 
+    void bola_positionReset(){
+        if ( ( (x_currentPosLeft <= 70) || (x_currentPosRight >= 570) )&& ( (y_currentPosUp <= 270 && y_currentPosUp >= 170) || (y_currentPosDown <= 270 && y_currentPosDown >= 170) ) ){
+            x_position = 320;
+            y_position = 220;
+            x_currentPosRight = x_position+ball_radius;
+            x_currentPosLeft = x_position-ball_radius;
+            y_currentPosUp = y_position+ball_radius;
+            y_currentPosDown = y_position-ball_radius;
+        }
+
     };
+
+};
 
 #endif // BOLA_MECHANIC_H_INCLUDED

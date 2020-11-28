@@ -28,6 +28,7 @@ static void display(void)
     garis_putih_lapangan();
 
     bola bola1;
+    //bola1.bola_positionReset();
     bola1.movement();
 
 	glFlush();
