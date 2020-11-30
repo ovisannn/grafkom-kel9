@@ -31,6 +31,8 @@ static void display(void)
     //bola1.bola_positionReset();
     bola1.movement();
 
+    //player
+    mainPlayer();
 	glFlush();
 	glutSwapBuffers();
 }
