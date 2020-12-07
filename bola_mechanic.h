@@ -2,7 +2,7 @@
 #define BOLA_MECHANIC_H_INCLUDED
 //graphic position variable
 float theta;
-int ball_radius = 18;
+int ball_radius = 10;
 float x_position = 320;
 float y_position = 220;
 
@@ -13,7 +13,7 @@ float y_currentPosUp = y_position+ball_radius;
 float y_currentPosDown = y_position-ball_radius;
 
 //movement speed variable
-float general_speed = 0.3;
+float general_speed = 0.5;
 float xSpeed = general_speed;
 float ySpeed = general_speed;
 
@@ -39,13 +39,12 @@ public:
             graphic();
             x_position +=xSpeed;
             y_position +=ySpeed;
-            //glTranslatef(xSpeed,ySpeed,0);
-            //collider curent position
+
             x_currentPosRight +=xSpeed ;
             x_currentPosLeft +=xSpeed;
             y_currentPosUp +=ySpeed ;
             y_currentPosDown +=ySpeed;
-            //cout<<x_currentPosLeft<<endl;
+
             if (x_currentPosRight >= 570 || x_currentPosLeft<=70){
                 xSpeed = xSpeed*-1;
                 }

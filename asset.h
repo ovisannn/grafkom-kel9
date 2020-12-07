@@ -136,6 +136,5 @@ void gawang(){
 void lapangan(){
     lapangann();
 	rangkai();
-
 	gawang();
 }

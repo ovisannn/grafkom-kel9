@@ -16,7 +16,12 @@ using namespace std;
 
 
 /// Global variables
+bola bola1;
 
+void ball_player_interaction()
+{
+
+}
 
 static void display(void)
 {
@@ -27,7 +32,6 @@ static void display(void)
     lapangan();
     garis_putih_lapangan();
 
-    bola bola1;
     //bola1.bola_positionReset();
     bola1.movement();
 
@@ -35,6 +39,7 @@ static void display(void)
     mainPlayer();
 	glFlush();
 	glutSwapBuffers();
+
 }
 
 static void idle(void)
@@ -53,16 +58,15 @@ int main(int argc, char* argv[])
 	glutInitDisplayMode(GLUT_RGBA | GLUT_DOUBLE | GLUT_DEPTH);
 
 	glutCreateWindow("sepak bola");
+    //BERGERAK
+	glutKeyboardFunc(player2_key);
+	glutSpecialFunc(player1_Key);
 
 	gluOrtho2D(0, width_Screen, 0, height_Screen);
 	glutDisplayFunc(display);
 
-	//BERGERAK
-	glutKeyboardFunc(key);
-	glutSpecialFunc(specialKey);
 	glutIdleFunc(idle);
 
 	glutMainLoop();
-
 	return EXIT_SUCCESS;
 }
