@@ -274,7 +274,7 @@
 
 1606630147 f:\kuliah luuuur\tugas kuliah\semester 3\grafika komputer (pr)\grafkom-kel9\asset.h
 
-1607337368 source:c:\users\ovi sanjaya\documents\github\grafkom-kel9\main.cpp
+1607340721 source:c:\users\ovi sanjaya\documents\github\grafkom-kel9\main.cpp
 	<math.h>
 	<GLUT/glut.h>
 	<GL/glut.h>
@@ -285,9 +285,10 @@
 	"asset.h"
 	"garis_putih_lapangan.h"
 
-1607340712 c:\users\ovi sanjaya\documents\github\grafkom-kel9\player_control.h
+1607361937 c:\users\ovi sanjaya\documents\github\grafkom-kel9\player_control.h
+	"bola_mechanic.h"
 
-1607322793 c:\users\ovi sanjaya\documents\github\grafkom-kel9\bola_mechanic.h
+1607361937 c:\users\ovi sanjaya\documents\github\grafkom-kel9\bola_mechanic.h
 
 1607322727 c:\users\ovi sanjaya\documents\github\grafkom-kel9\asset.h
 

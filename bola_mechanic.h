@@ -2,7 +2,7 @@
 #define BOLA_MECHANIC_H_INCLUDED
 //graphic position variable
 float theta;
-int ball_radius = 10;
+int ball_radius = 15;
 float x_position = 320;
 float y_position = 220;
 
@@ -13,7 +13,7 @@ float y_currentPosUp = y_position+ball_radius;
 float y_currentPosDown = y_position-ball_radius;
 
 //movement speed variable
-float general_speed = 0.5;
+float general_speed = 0.25;
 float xSpeed = general_speed;
 float ySpeed = general_speed;
 

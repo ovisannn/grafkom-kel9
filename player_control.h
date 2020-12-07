@@ -1,11 +1,22 @@
 #ifndef PLAYER_CONTROL_H_INCLUDED
 #define PLAYER_CONTROL_H_INCLUDED
-
+#include "bola_mechanic.h"
 //int kx = 0, ky = 0; //player 1 movement control
 //int sx = 0, sy = 0; //player 2 movement control
 float player_speed = 10;
 float playerx_speed = player_speed;
 float playery_speed = player_speed;
+
+//variable konfirmasi
+bool move1_kanan;
+bool move1_kiri;
+bool move1_atas;
+bool move1_bawah;
+
+bool move2_kanan;
+bool move2_kiri;
+bool move2_atas;
+bool move2_bawah;
 
 //player collider
 //1 untuk player 1 dan 2 untuk player 2
@@ -49,12 +60,13 @@ void radius(int jari2, int jumlah_titik, int x_tengah, int y_tengah){
      glEnd();
  }
 
-
 static void gerak1_horizontal(float a){
         Ax_1 +=playerx_speed*a;
         Bx_1 +=playerx_speed*a;
         Cx_1 +=playerx_speed*a;
         Dx_1 +=playerx_speed*a;
+        Aplayer1_ballx +=playerx_speed*a;
+        Bplayer1_ballx +=playerx_speed*a;
 
 }
 
@@ -63,14 +75,17 @@ static void gerak1_vertical(float a){
         By_1 +=playery_speed*a;
         Cy_1 +=playery_speed*a;
         Dy_1 +=playery_speed*a;
+        Aplayer1_bally +=playery_speed*a;
+        Bplayer1_bally +=playery_speed*a;
 }
-
 
 static void gerak2_horizontal(float a){
         Ax_2 +=playerx_speed*a;
         Bx_2 +=playerx_speed*a;
         Cx_2 +=playerx_speed*a;
         Dx_2 +=playerx_speed*a;
+        Aplayer2_ballx +=playerx_speed*a;
+        Bplayer2_ballx +=playerx_speed*a;
 
 }
 
@@ -79,6 +94,22 @@ static void gerak2_vertical(float a){
         By_2 +=playery_speed*a;
         Cy_2 +=playery_speed*a;
         Dy_2 +=playery_speed*a;
+        Aplayer2_bally +=playery_speed*a;
+        Bplayer2_bally +=playery_speed*a;
+}
+
+static void player1_wall_collide(){
+    if (Ax_1 <= 70){move1_kiri = FALSE;}else{move1_kiri = TRUE;}
+    if (Bx_1 >= 570){move1_kanan = FALSE;}else{move1_kanan = TRUE;}
+    if (Ay_1 >= 370){move1_atas = FALSE;}else{move1_atas = TRUE;}
+    if (Cy_1 <= 70){move1_bawah = FALSE;}else{move1_bawah = TRUE;}
+}
+
+static void player2_wall_collide(){
+    if (Ax_2 <= 70){move2_kiri = FALSE;}else{move2_kiri = TRUE;}
+    if (Bx_2 >=570){move2_kanan = FALSE;}else{move2_kanan = TRUE;}
+    if (Ay_2 >=370){move2_atas = FALSE;}else{move2_atas = TRUE;}
+    if (Cy_2 <=70){move2_bawah = FALSE;}else{move2_bawah = TRUE;}
 }
 
 
@@ -86,16 +117,16 @@ static void player2_key(unsigned char key, int x, int y)
     {
         switch (key) {
         case 'w':
-            gerak2_vertical(1);
+            if(move2_atas == TRUE){gerak2_vertical(1);}
             break;
         case 'a':
-            gerak2_horizontal(-1);
+            if(move2_kiri == TRUE){gerak2_horizontal(-1);}
             break;
         case 's':
-            gerak2_vertical(-1);
+            if(move2_bawah == TRUE){gerak2_vertical(-1);}
             break;
         case 'd':
-            gerak2_horizontal(1);
+            if(move2_kanan == TRUE){gerak2_horizontal(1);}
             break;
         }
     }
@@ -104,16 +135,16 @@ static void player1_Key(int key, int x, int y)
     {
         switch (key) {
         case GLUT_KEY_UP:
-            gerak1_vertical(1);
+            if(move1_atas == TRUE){gerak1_vertical(1);}
             break;
         case GLUT_KEY_LEFT:
-            gerak1_horizontal(-1);
+            if(move1_kiri == TRUE){gerak1_horizontal(-1);}
             break;
         case GLUT_KEY_DOWN:
-            gerak1_vertical(-1);
+            if(move1_bawah == TRUE){gerak1_vertical(-1);}
             break;
         case GLUT_KEY_RIGHT:
-            gerak1_horizontal(1);
+            if(move1_kanan == TRUE){gerak1_horizontal(1);}
             break;
         }
     }
@@ -146,6 +177,12 @@ void players(){
 
 void mainPlayer(){
     players();
+    player1_wall_collide();
+    player2_wall_collide();
+    //cout<<move_atas<<endl;
+    //cout<<move_kanan<<endl;
+    //cout<<move_kiri<<endl;
+    //cout<<move_bawah<<endl;
 }
 
 
