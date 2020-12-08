@@ -1,5 +1,6 @@
 #ifndef BOLA_MECHANIC_H_INCLUDED
 #define BOLA_MECHANIC_H_INCLUDED
+#include "player_control.h"
 //graphic position variable
 float theta;
 int ball_radius = 15;
@@ -51,6 +52,7 @@ public:
             if(y_currentPosDown<=70 || y_currentPosUp>=370){
                 ySpeed = ySpeed*-1;
                 }
+
     };
 
     void bola_positionReset(){

@@ -1,8 +1,7 @@
 #ifndef PLAYER_CONTROL_H_INCLUDED
 #define PLAYER_CONTROL_H_INCLUDED
-#include "bola_mechanic.h"
-//int kx = 0, ky = 0; //player 1 movement control
-//int sx = 0, sy = 0; //player 2 movement control
+//player 1 movement control
+//player 2 movement control
 float player_speed = 10;
 float playerx_speed = player_speed;
 float playery_speed = player_speed;
@@ -179,10 +178,6 @@ void mainPlayer(){
     players();
     player1_wall_collide();
     player2_wall_collide();
-    //cout<<move_atas<<endl;
-    //cout<<move_kanan<<endl;
-    //cout<<move_kiri<<endl;
-    //cout<<move_bawah<<endl;
 }
 
 
