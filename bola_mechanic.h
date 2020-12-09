@@ -1,6 +1,11 @@
 #ifndef BOLA_MECHANIC_H_INCLUDED
 #define BOLA_MECHANIC_H_INCLUDED
 #include "player_control.h"
+
+//main variable
+int player1_score = 0;
+int player2_score = 0;
+
 //graphic position variable
 float theta;
 int ball_radius = 15;
@@ -35,6 +40,8 @@ public:
         glEnd();
     };
 
+
+
 //pergerakan bola
     void movement(){
             graphic();
@@ -53,7 +60,22 @@ public:
                 ySpeed = ySpeed*-1;
                 }
 
+            if(((x_currentPosRight>=Ax_1 && x_currentPosRight<=Bx_1)&&(y_position >= Dy_1 && y_position <= Ay_1))||((x_currentPosLeft>=Ax_2 && x_currentPosLeft<=Bx_2)&&(y_position >= Dy_2 && y_position <= Ay_2))){
+                xSpeed = xSpeed*-1;
+            }
+
+            if(((x_currentPosLeft>=Ax_1 && x_currentPosLeft<=Bx_1)&&(y_position >= Dy_1 && y_position <= Ay_1))||((x_currentPosRight>=Ax_2 && x_currentPosRight<=Bx_2)&&(y_position >= Dy_2 && y_position <= Ay_2))){
+                xSpeed = xSpeed*-1;
+            }
+            if(((y_currentPosUp>=Ay_2 && y_currentPosUp<=Dy_2)&&(x_position >= Dx_2 && x_position <= Cx_2))||((y_currentPosUp>=Ay_1 && y_currentPosUp<=Dy_1)&&(x_position >= Dx_1 && x_position <= Cx_1))){
+                ySpeed = ySpeed*-1;
+            }
+
+            if(((y_currentPosDown>=Ay_1 && y_currentPosDown<=Dy_1)&&(x_position >= Dx_1 && x_position <= Cy_1))||((y_currentPosDown>=Ay_2 && y_currentPosDown<=Dy_2)&&(x_position >= Dx_2 && x_position <= Cy_2))){
+                ySpeed = ySpeed*-1;
+            }
     };
+
 
     void bola_positionReset(){
         if ( ( (x_currentPosLeft <= 70) || (x_currentPosRight >= 570) )&& ( (y_currentPosUp <= 270 && y_currentPosUp >= 170) || (y_currentPosDown <= 270 && y_currentPosDown >= 170) ) ){
@@ -66,6 +88,11 @@ public:
         }
 
     };
+
+    void goal_logic(){
+    if (x_currentPosLeft <= 70 && (y_currentPosUp <= 270 && y_currentPosUp >= 170)){player1_score += 1;}
+    if (x_currentPosLeft >= 750 && (y_currentPosUp <= 270 && y_currentPosUp >= 170)){player2_score += 1;}
+    }
 
 };
 

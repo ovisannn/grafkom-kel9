@@ -2,7 +2,7 @@
 #define PLAYER_CONTROL_H_INCLUDED
 //player 1 movement control
 //player 2 movement control
-float player_speed = 10;
+float player_speed = 30;
 float playerx_speed = player_speed;
 float playery_speed = player_speed;
 
