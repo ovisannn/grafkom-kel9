@@ -52,7 +52,6 @@ int main(int argc, char* argv[])
 {
     int width_Screen = 640;
     int height_Screen = 480;
-    cout<<player1_score<<endl;
 	glutInit(&argc, argv);
 	glutInitWindowPosition(100, 100);
 	glutInitWindowSize((width_Screen*1.5), (height_Screen*1.5));

@@ -20,10 +20,10 @@ bool move2_bawah;
 //player collider
 //1 untuk player 1 dan 2 untuk player 2
 float Ax_1 = 450, Ax_2 = 180;
-float Ay_1 = 240, Ay_2 = 240;
-float Bx_1 = 460, Bx_2 = 190;
-float By_1 = 240, By_2 = 240;
-float Cx_1 = 460, Cx_2 = 190;
+float Ay_1 = 270, Ay_2 = 270;
+float Bx_1 = 480, Bx_2 = 210;
+float By_1 = 270, By_2 = 270;
+float Cx_1 = 480, Cx_2 = 210;
 float Cy_1 = 200, Cy_2 = 200;
 float Dx_1 = 450, Dx_2 = 180;
 float Dy_1 = 200, Dy_2 = 200;
@@ -157,8 +157,6 @@ void players(){
                 Bx_1, By_1,
                 Cx_1, Cy_1,
                 Dx_1, Dy_1);
-            radius(5,10,Aplayer1_ballx,Aplayer1_bally);
-            radius(5,10,Bplayer1_ballx,Bplayer1_bally);
         glPopMatrix();
 
         glPushMatrix();
@@ -169,8 +167,6 @@ void players(){
                 Bx_2, By_2,
                 Cx_2, Cy_2,
                 Dx_2, Dy_2);
-            radius(5,10,Aplayer2_ballx,Aplayer2_bally);
-            radius(5,10,Bplayer2_ballx,Bplayer2_bally);
         glPopMatrix();
     }
 

@@ -2,9 +2,9 @@
 <CodeBlocks_layout_file>
 	<FileVersion major="1" minor="0" />
 	<ActiveTarget name="Debug" />
-	<File name="player_control.h" open="1" top="0" tabpos="2" split="0" active="1" splitpos="0" zoom_1="1" zoom_2="0">
+	<File name="bola_mechanic.h" open="1" top="1" tabpos="3" split="0" active="1" splitpos="0" zoom_1="1" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="150" topLine="146" />
+			<Cursor1 position="3385" topLine="63" />
 		</Cursor>
 	</File>
 	<File name="garis_putih_lapangan.h" open="0" top="0" tabpos="4" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
@@ -15,6 +15,16 @@
 			<Collapse line="3" />
 			<Collapse line="22" />
 		</Folding>
+	</File>
+	<File name="main.cpp" open="1" top="0" tabpos="1" split="0" active="1" splitpos="0" zoom_1="1" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="803" topLine="34" />
+		</Cursor>
+	</File>
+	<File name="player_control.h" open="1" top="0" tabpos="2" split="0" active="1" splitpos="0" zoom_1="1" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="4701" topLine="0" />
+		</Cursor>
 	</File>
 	<File name="asset.h" open="0" top="0" tabpos="5" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
@@ -28,15 +38,5 @@
 			<Collapse line="114" />
 			<Collapse line="121" />
 		</Folding>
-	</File>
-	<File name="bola_mechanic.h" open="1" top="1" tabpos="3" split="0" active="1" splitpos="0" zoom_1="1" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="3175" topLine="25" />
-		</Cursor>
-	</File>
-	<File name="main.cpp" open="1" top="0" tabpos="1" split="0" active="1" splitpos="0" zoom_1="1" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="348" topLine="27" />
-		</Cursor>
 	</File>
 </CodeBlocks_layout_file>

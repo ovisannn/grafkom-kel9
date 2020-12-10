@@ -1,6 +1,7 @@
 #ifndef BOLA_MECHANIC_H_INCLUDED
 #define BOLA_MECHANIC_H_INCLUDED
 #include "player_control.h"
+#include <cstdlib>
 
 //main variable
 int player1_score = 0;
@@ -19,9 +20,10 @@ float y_currentPosUp = y_position+ball_radius;
 float y_currentPosDown = y_position-ball_radius;
 
 //movement speed variable
-float general_speed = 0.25;
-float xSpeed = general_speed;
-float ySpeed = general_speed;
+float ballx_direction = rand()%10;
+float bally_direction = rand()%10;
+float xSpeed = ballx_direction/100+ 0.25;
+float ySpeed = bally_direction/100+ 0.25;
 
 class bola {
 public:
@@ -90,8 +92,8 @@ public:
     };
 
     void goal_logic(){
-    if (x_currentPosLeft <= 70 && (y_currentPosUp <= 270 && y_currentPosUp >= 170)){player1_score += 1;}
-    if (x_currentPosLeft >= 750 && (y_currentPosUp <= 270 && y_currentPosUp >= 170)){player2_score += 1;}
+    if (x_currentPosLeft <= 70 && (y_currentPosUp <= 270 && y_currentPosUp >= 170)){player1_score += 1; cout<<"player 1: "<<player1_score<<endl;}
+    if (x_currentPosRight >= 570 && (y_currentPosUp <= 270 && y_currentPosUp >= 170)){player2_score += 1; cout<<"player 2: "<<player2_score<<endl;}
     }
 
 };
