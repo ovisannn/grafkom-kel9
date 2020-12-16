@@ -13,7 +13,7 @@ using namespace std;
 #include "bola_mechanic.h"
 #include "asset.h"
 #include "garis_putih_lapangan.h"
-
+#include "papan_score.h"
 
 /// Global variables
 bola bola1;
@@ -35,7 +35,7 @@ static void display(void)
     bola1.bola_positionReset();
     bola1.movement();
     bola1.goal_logic();
-
+    papan_score();
     //player
     mainPlayer();
 	glFlush();

@@ -133,8 +133,13 @@ void gawang(){
     outline(38, 285, 55, 285, 55, 185, 38, 185);
 }
 
+
+
 void lapangan(){
     lapangann();
 	rangkai();
 	gawang();
 }
+
+
+
