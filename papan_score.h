@@ -1,5 +1,6 @@
 #ifndef PAPAN_SCORE_H_INCLUDED
 #define PAPAN_SCORE_H_INCLUDED
+//Membuat bangun segi 4 sebagai template nama klub ataupun player
 void segi4(float titikA1, float titikB1, float titikA2, float titikB2, float titikA3, float titikB3, float titikA4, float titikB4) {
 	glBegin(GL_QUADS);
 	glVertex2f(titikA1, titikB1);
@@ -28,6 +29,7 @@ void segi6(float titikA1, float titikB1, float titikA2, float titikB2, float tit
 	glEnd();
 }
 
+//membuat template waktu permainan
 void hitungMundur(){
     glColor3ub(155, 0, 0);
     segi4(310, 460, 370, 460, 370, 410, 310, 410);
