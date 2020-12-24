@@ -17,6 +17,8 @@ bool move2_kiri;
 bool move2_atas;
 bool move2_bawah;
 
+bool menuKey;
+
 //player collider
 //1 untuk player 1 dan 2 untuk player 2
 float Ax_1 = 450, Ax_2 = 180;
@@ -144,6 +146,9 @@ static void player1_Key(int key, int x, int y)
             break;
         case GLUT_KEY_RIGHT:
             if(move1_kanan == TRUE){gerak1_horizontal(1);}
+            break;
+        case GLUT_KEY_F1:
+            menuKey = TRUE;
             break;
         }
     }

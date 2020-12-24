@@ -14,9 +14,14 @@ using namespace std;
 #include "asset.h"
 #include "garis_putih_lapangan.h"
 #include "papan_score.h"
+#include "menu.h"
+#include "drow_teks.h"
 
 /// Global variables
 bola bola1;
+
+//bool menuKey;
+//menuKey = FALSE;
 
 void ball_player_interaction()
 {
@@ -25,21 +30,32 @@ void ball_player_interaction()
 
 static void display(void)
 {
-	//BACKGROUND
-	glClearColor(10,10,10,10);
-	glClear(GL_COLOR_BUFFER_BIT);
+    //menuKey = FALSE;
 
-    lapangan();
-    garis_putih_lapangan();
 
-    bola1.bola_positionReset();
-    bola1.movement();
-    bola1.goal_logic();
-    papan_score();
-    //player
-    mainPlayer();
-	glFlush();
-	glutSwapBuffers();
+    if (menuKey) {
+        //BACKGROUND
+        glClearColor(10,10,10,10);
+        glClear(GL_COLOR_BUFFER_BIT);
+
+        teks();
+
+        lapangan();
+        garis_putih_lapangan();
+
+        bola1.bola_positionReset();
+        bola1.movement();
+        bola1.goal_logic();
+        papan_score();
+        //player
+        mainPlayer();
+
+        glFlush();
+        glutSwapBuffers();
+
+    } else{
+        gameMenu();
+    }
 
 }
 
@@ -61,12 +77,13 @@ int main(int argc, char* argv[])
     //BERGERAK
 	glutKeyboardFunc(player2_key);
 	glutSpecialFunc(player1_Key);
+	//glutSpecialFunc(menu);
 
 	gluOrtho2D(0, width_Screen, 0, height_Screen);
 	glutDisplayFunc(display);
 
 	glutIdleFunc(idle);
-
+    myinit();
 	glutMainLoop();
 	return EXIT_SUCCESS;
 }
