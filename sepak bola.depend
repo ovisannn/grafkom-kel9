@@ -314,7 +314,7 @@
 	<sstream>
 	"bola_mechanic.h"
 
-1608901987 source:d:\kuliah\semester3\project kelompok\grafkomasli\grafkom-kel9\main.cpp
+1608902777 source:d:\kuliah\semester3\project kelompok\grafkomasli\grafkom-kel9\main.cpp
 	<math.h>
 	<GLUT/glut.h>
 	<GL/glut.h>
@@ -351,5 +351,5 @@
 	<sstream>
 	"bola_mechanic.h"
 
-1608902561 d:\kuliah\semester3\project kelompok\grafkomasli\grafkom-kel9\gameover.h
+1608902873 d:\kuliah\semester3\project kelompok\grafkomasli\grafkom-kel9\gameover.h
 

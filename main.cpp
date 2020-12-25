@@ -62,7 +62,8 @@ static void display(void)
         bola1.movement();
         bola1.goal_logic();
         papan_score();
-        hurufp1();
+        //hurufp1();
+        hurufp2();
         //player
         mainPlayer();
 
