@@ -162,6 +162,90 @@ void hurufp2(){
 
 }
 
+void hurufd(){
+
+    //warna biru merah
+    glBegin(GL_POLYGON);
+    glColor3ub(232, 81, 96);
+    glVertex2f(440,255);
+    glVertex2f(220,255);
+
+    glColor3ub(240, 232, 10);
+    glVertex2f(220,295);
+    glVertex2f(440,295);
+
+    glEnd();
+
+    glBegin(GL_POLYGON);
+    glColor3ub(240, 232, 10);
+    glVertex2f(220,295);
+    glVertex2f(440,295);
+    glColor3ub(232, 81, 96);
+    glVertex2f(440,320);
+    glVertex2f(220,320);
+    glEnd();
+
+    //huruf d
+    glLineWidth(7);
+    glBegin(GL_LINE_STRIP);
+    glColor3ub(125, 130, 126);
+    glVertex2f(260, 270);
+	glVertex2f(260, 300);
+	glVertex2f(280, 300);
+	glVertex2f(290, 295);
+	glVertex2f(290, 275);
+	glVertex2f(280, 270);
+	glVertex2f(260, 270);
+	glEnd();
+
+	//huruf r
+	glBegin(GL_LINE_STRIP);
+	glColor3ub(125, 130, 126);
+    glVertex2f(300, 270);
+	glVertex2f(300, 282);
+	glVertex2f(300, 300);
+	glVertex2f(318, 300);
+	glVertex2f(320, 296);
+	glVertex2f(320, 286);
+	glVertex2f(318, 282);
+	glVertex2f(300, 282);
+	glVertex2f(320, 270);
+	glEnd();
+
+	//huruf a
+	glBegin(GL_LINE_STRIP);
+	glColor3ub(125, 130, 126);
+    glVertex2f(330, 270);
+	glVertex2f(345, 300);
+	glVertex2f(360, 270);
+	glVertex2f(345, 280);
+	glVertex2f(330, 270);
+	glEnd();
+
+	//huruf w
+	glBegin(GL_LINE_STRIP);
+	glColor3ub(125, 130, 126);
+    glVertex2f(365, 300);
+	glVertex2f(370, 270);
+	glVertex2f(385, 300);
+	glVertex2f(400, 270);
+	glVertex2f(405, 300);
+	glEnd();
+
+    glFlush();
+    glutSwapBuffers();
+
+
+}
+
+void transek(){
+    glPushMatrix();
+		//glColor3f(0.65, 0.75, 0.44);
+		glTranslatef(0, -50, 0);
+		hurufd();
+	glPopMatrix();
+}
+
 
 
 #endif // GAMEOVER_H_INCLUDED

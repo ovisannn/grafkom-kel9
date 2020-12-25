@@ -315,7 +315,7 @@
 	<sstream>
 	"bola_mechanic.h"
 
-1608902777 source:d:\kuliah\semester3\project kelompok\grafkomasli\grafkom-kel9\main.cpp
+1608914634 source:d:\kuliah\semester3\project kelompok\grafkomasli\grafkom-kel9\main.cpp
 	<math.h>
 	<GLUT/glut.h>
 	<GL/glut.h>
@@ -331,28 +331,28 @@
 	"drow_teks.h"
 	"gameover.h"
 
-1608901632 d:\kuliah\semester3\project kelompok\grafkomasli\grafkom-kel9\player_control.h
+1608914258 d:\kuliah\semester3\project kelompok\grafkomasli\grafkom-kel9\player_control.h
 
-1608901632 d:\kuliah\semester3\project kelompok\grafkomasli\grafkom-kel9\bola_mechanic.h
+1608914258 d:\kuliah\semester3\project kelompok\grafkomasli\grafkom-kel9\bola_mechanic.h
 	"player_control.h"
 	<cstdlib>
 
-1608901632 d:\kuliah\semester3\project kelompok\grafkomasli\grafkom-kel9\asset.h
+1608914257 d:\kuliah\semester3\project kelompok\grafkomasli\grafkom-kel9\asset.h
 
-1608901632 d:\kuliah\semester3\project kelompok\grafkomasli\grafkom-kel9\garis_putih_lapangan.h
+1608914258 d:\kuliah\semester3\project kelompok\grafkomasli\grafkom-kel9\garis_putih_lapangan.h
 
-1608901632 d:\kuliah\semester3\project kelompok\grafkomasli\grafkom-kel9\papan_score.h
+1608914258 d:\kuliah\semester3\project kelompok\grafkomasli\grafkom-kel9\papan_score.h
 
-1608901632 d:\kuliah\semester3\project kelompok\grafkomasli\grafkom-kel9\menu.h
+1608914258 d:\kuliah\semester3\project kelompok\grafkomasli\grafkom-kel9\menu.h
 
-1608901632 d:\kuliah\semester3\project kelompok\grafkomasli\grafkom-kel9\drow_teks.h
+1608914258 d:\kuliah\semester3\project kelompok\grafkomasli\grafkom-kel9\drow_teks.h
 	<fstream>
 	<winuser.h>
 	<string>
 	<sstream>
 	"bola_mechanic.h"
 
-1608902873 d:\kuliah\semester3\project kelompok\grafkomasli\grafkom-kel9\gameover.h
+1608914624 d:\kuliah\semester3\project kelompok\grafkomasli\grafkom-kel9\gameover.h
 
 1608905770 f:\kuliah luuuur\tugas kuliah\semester 3\grafika komputer (pr)\grafkom-kel9\gameover.h
 

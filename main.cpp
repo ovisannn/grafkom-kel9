@@ -25,7 +25,7 @@ bola bola1;
 int timer;
 int realTime;
 
-int gameTime = 5;
+int gameTime = 10;
 
 
 //bool menuKey;
@@ -86,7 +86,7 @@ static void display(void)
         }else if(player1_score < player2_score){
             hurufp2();
         }else{
-            hurufp2();
+            transek();
         }
     }else{
         timer+=1;
