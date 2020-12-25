@@ -314,3 +314,42 @@
 	<sstream>
 	"bola_mechanic.h"
 
+1608901987 source:d:\kuliah\semester3\project kelompok\grafkomasli\grafkom-kel9\main.cpp
+	<math.h>
+	<GLUT/glut.h>
+	<GL/glut.h>
+	<stdlib.h>
+	<iostream>
+	<sstream>
+	"player_control.h"
+	"bola_mechanic.h"
+	"asset.h"
+	"garis_putih_lapangan.h"
+	"papan_score.h"
+	"menu.h"
+	"drow_teks.h"
+	"gameover.h"
+
+1608901632 d:\kuliah\semester3\project kelompok\grafkomasli\grafkom-kel9\player_control.h
+
+1608901632 d:\kuliah\semester3\project kelompok\grafkomasli\grafkom-kel9\bola_mechanic.h
+	"player_control.h"
+	<cstdlib>
+
+1608901632 d:\kuliah\semester3\project kelompok\grafkomasli\grafkom-kel9\asset.h
+
+1608901632 d:\kuliah\semester3\project kelompok\grafkomasli\grafkom-kel9\garis_putih_lapangan.h
+
+1608901632 d:\kuliah\semester3\project kelompok\grafkomasli\grafkom-kel9\papan_score.h
+
+1608901632 d:\kuliah\semester3\project kelompok\grafkomasli\grafkom-kel9\menu.h
+
+1608901632 d:\kuliah\semester3\project kelompok\grafkomasli\grafkom-kel9\drow_teks.h
+	<fstream>
+	<winuser.h>
+	<string>
+	<sstream>
+	"bola_mechanic.h"
+
+1608902561 d:\kuliah\semester3\project kelompok\grafkomasli\grafkom-kel9\gameover.h
+

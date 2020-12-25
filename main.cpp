@@ -17,6 +17,7 @@ using namespace std;
 #include "papan_score.h"
 #include "menu.h"
 #include "drow_teks.h"
+#include "gameover.h"
 
 /// Global variables
 bola bola1;
@@ -61,8 +62,10 @@ static void display(void)
         bola1.movement();
         bola1.goal_logic();
         papan_score();
+        hurufp1();
         //player
         mainPlayer();
+
 
         glFlush();
         glutSwapBuffers();
