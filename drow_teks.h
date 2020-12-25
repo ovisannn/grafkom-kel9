@@ -8,16 +8,12 @@
 #include <sstream>
 #include "bola_mechanic.h"
 
-//import semua dependency atau library yang dibutuhkan
 
 using namespace std;
 
-// Deklarasi variabel beserta tipe data yang dimilikinya
-
-void *font = GLUT_BITMAP_HELVETICA_12; //inisialisasi font teks yang digunakan
+void *font = GLUT_BITMAP_HELVETICA_12;
 void *font2 = GLUT_BITMAP_TIMES_ROMAN_24;
 
-//function menampilkan teks pada window openGL
 void drawTextt(int x, int y, const char *string) {
 	glRasterPos2f(x, y);
 	int len = (int)strlen(string);
@@ -28,7 +24,6 @@ void drawTextt(int x, int y, const char *string) {
 
 void drawText(std::string text, void *font, int x, int y, double R, double G, double B)
 {
-    // https://stackoverflow.com/questions/14318/using-glut-bitmap-fonts
     glPushMatrix();
     glColor3ub(R, G, B);
     glRasterPos2i(x, y);
@@ -56,9 +51,33 @@ void teks(){
     //int tes;
     //tes = 20;
     char tes;
+    int player1;
+    int player2;
+    int waktuuuu;
 
-    tes = 10;
-    drawText("tes", GLUT_BITMAP_HELVETICA_18, 0, 93, 0, 0, 0);
+    //waktuuuu = realTime;
+
+    player1 = player1_score;
+    player2 = player2_score;
+    stringstream ss;
+    stringstream kk;
+    ss<<player1;
+    kk<<player2;
+    string pemain1;
+    string pemain2;
+    ss>>pemain1;
+    kk>>pemain2;
+
+
+
+    drawText("Player Red", GLUT_BITMAP_TIMES_ROMAN_24, 200, 425, 255, 0, 0);
+    drawText("Player Blue", GLUT_BITMAP_TIMES_ROMAN_24, 370, 425, 0, 0, 255);
+
+    drawText(pemain1, GLUT_BITMAP_TIMES_ROMAN_24, 145, 430, 255, 0, 0);
+    drawText(pemain2, GLUT_BITMAP_TIMES_ROMAN_24, 485, 430, 0, 0, 255);
+
+
+    //drawText(waktu, GLUT_BITMAP_TIMES_ROMAN_24, 285, 430, 0, 0, 255);
 }
 
 

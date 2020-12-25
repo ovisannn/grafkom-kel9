@@ -4,7 +4,7 @@
 void garis_lapangan(){
     //garis tepi lapangan
     glBegin(GL_LINE_STRIP);
-    glColor3ub(125, 130, 126);
+    //glColor3ub(125, 130, 126);
 	glVertex2f(70,70);
 	glVertex2f(570,70);
 	glVertex2f(570,370);
@@ -13,7 +13,7 @@ void garis_lapangan(){
 	glEnd();
 
 	glBegin(GL_LINE_STRIP);
-	glColor3ub(125, 130, 126);
+	//glColor3ub(125, 130, 126);
 	glVertex2f(320,70);
 	glVertex2f(320,370);
 	glEnd();
@@ -21,10 +21,10 @@ void garis_lapangan(){
 }
 
 void gari_gawang(){
-    glLineWidth(4);
+    glLineWidth(6);
     // garis luar gawang kiri
 	glBegin(GL_LINE_STRIP);
-    glColor3ub(125, 130, 126);
+    //glColor3ub(125, 130, 126);
 	glVertex2f(70,120);
 	glVertex2f(190,120);
 	glVertex2f(190,320);
@@ -33,7 +33,7 @@ void gari_gawang(){
 	glEnd();
     // garis gawang kiri
 	glBegin(GL_LINE_STRIP);
-    glColor3ub(125, 130, 126);
+    //glColor3ub(125, 130, 126);
 	glVertex2f(70,145);
 	glVertex2f(140,145);
 	glVertex2f(140,295);
@@ -42,7 +42,7 @@ void gari_gawang(){
 
 	// garis luar gawang kanan
 	glBegin(GL_LINE_STRIP);
-    glColor3ub(125, 130, 126);
+    //glColor3ub(125, 130, 126);
 	glVertex2f(570,120);
 	glVertex2f(450,120);
 	glVertex2f(450,320);
@@ -50,7 +50,7 @@ void gari_gawang(){
 	glEnd();
     // garis gawang kanan
     glBegin(GL_LINE_STRIP);
-    glColor3ub(125, 130, 126);
+    //glColor3ub(125, 130, 126);
     glVertex2f(570,145);
 	glVertex2f(500,145);
 	glVertex2f(500,295);
@@ -73,6 +73,7 @@ void garis_lingkaran(int jari2, int jumlah_titik, int x_tengah, int y_tengah){
  }
 
  void garis_putih_lapangan(){
+    glColor3ub(230, 230, 230);
     garis_lapangan();
     gari_gawang();
     garis_lingkaran(63,63,320,220);

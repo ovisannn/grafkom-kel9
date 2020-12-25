@@ -2,7 +2,7 @@
 #define PAPAN_SCORE_H_INCLUDED
 //Membuat bangun segi 4 sebagai template nama klub ataupun player
 void segi4(float titikA1, float titikB1, float titikA2, float titikB2, float titikA3, float titikB3, float titikA4, float titikB4) {
-	glBegin(GL_QUADS);
+	glBegin(GL_LINE_LOOP);
 	glVertex2f(titikA1, titikB1);
 	glVertex2f(titikA2, titikB2);
 	glVertex2f(titikA3, titikB3);
@@ -31,21 +31,19 @@ void segi6(float titikA1, float titikB1, float titikA2, float titikB2, float tit
 
 //membuat template waktu permainan
 void hitungMundur(){
-    glColor3ub(155, 0, 0);
-    segi4(310, 460, 370, 460, 370, 410, 310, 410);
-    glColor3ub(105, 0, 0);
-    segi3(300, 460, 340, 475,  380, 460);
+    glColor3ub(0, 105, 0);
+    segi4(310, 450, 370, 450, 370, 410, 310, 410);
 }
 
 void skorKanan(){
-    glColor3ub(0, 105, 0);
+    glColor3ub(0, 0, 255);
     segi6(370, 450, 480, 450, 480, 435, 510, 410, 370, 410, 370, 440);
     segi6(510, 460, 540, 450, 540, 435, 510, 410, 480, 435, 480, 450);
     segi3(510, 410, 540, 435, 570, 395);
 }
 
 void skorKiri(){
-    glColor3ub(0, 105, 0);
+    glColor3ub(255, 0, 0);
     segi6(310, 450, 200, 450, 200, 435, 170, 410, 310, 410, 310, 420);
     segi6(170, 460, 200, 450, 200, 435, 170, 410, 140, 435, 140, 450);
     segi3(110, 395, 140, 435, 170, 410);
@@ -61,6 +59,7 @@ void skorKiri(){
 void papan_score(){
     glPushMatrix();
         glTranslatef(-20, 0, 0);
+        glLineWidth(7);
         hitungMundur();
         skorKanan();
         skorKiri();
