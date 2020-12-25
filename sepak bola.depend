@@ -257,7 +257,7 @@
 
 1606006909 d:\kuliah & tugasnya\.semester 3 -unej-\grafkom\project game\grafkom-kel9\bola_mechanic.h
 
-1608887309 source:f:\kuliah luuuur\tugas kuliah\semester 3\grafika komputer (pr)\grafkom-kel9\main.cpp
+1608909880 source:f:\kuliah luuuur\tugas kuliah\semester 3\grafika komputer (pr)\grafkom-kel9\main.cpp
 	<math.h>
 	<GLUT/glut.h>
 	<GL/glut.h>
@@ -271,8 +271,9 @@
 	"papan_score.h"
 	"menu.h"
 	"drow_teks.h"
+	"gameover.h"
 
-1608790803 f:\kuliah luuuur\tugas kuliah\semester 3\grafika komputer (pr)\grafkom-kel9\player_control.h
+1608908339 f:\kuliah luuuur\tugas kuliah\semester 3\grafika komputer (pr)\grafkom-kel9\player_control.h
 
 1607669461 f:\kuliah luuuur\tugas kuliah\semester 3\grafika komputer (pr)\grafkom-kel9\bola_mechanic.h
 	"player_control.h"
@@ -301,13 +302,13 @@
 
 1607540094 c:\users\ovi sanjaya\documents\github\grafkom-kel9\garis_putih_lapangan.h
 
-1608864752 f:\kuliah luuuur\tugas kuliah\semester 3\grafika komputer (pr)\grafkom-kel9\garis_putih_lapangan.h
+1608887627 f:\kuliah luuuur\tugas kuliah\semester 3\grafika komputer (pr)\grafkom-kel9\garis_putih_lapangan.h
 
-1608864805 f:\kuliah luuuur\tugas kuliah\semester 3\grafika komputer (pr)\grafkom-kel9\papan_score.h
+1608887627 f:\kuliah luuuur\tugas kuliah\semester 3\grafika komputer (pr)\grafkom-kel9\papan_score.h
 
-1608792011 f:\kuliah luuuur\tugas kuliah\semester 3\grafika komputer (pr)\grafkom-kel9\menu.h
+1608908196 f:\kuliah luuuur\tugas kuliah\semester 3\grafika komputer (pr)\grafkom-kel9\menu.h
 
-1608887159 f:\kuliah luuuur\tugas kuliah\semester 3\grafika komputer (pr)\grafkom-kel9\drow_teks.h
+1608905936 f:\kuliah luuuur\tugas kuliah\semester 3\grafika komputer (pr)\grafkom-kel9\drow_teks.h
 	<fstream>
 	<winuser.h>
 	<string>
@@ -352,4 +353,6 @@
 	"bola_mechanic.h"
 
 1608902873 d:\kuliah\semester3\project kelompok\grafkomasli\grafkom-kel9\gameover.h
+
+1608905770 f:\kuliah luuuur\tugas kuliah\semester 3\grafika komputer (pr)\grafkom-kel9\gameover.h
 

@@ -70,8 +70,8 @@ void teks(){
 
 
 
-    drawText("Player Red", GLUT_BITMAP_TIMES_ROMAN_24, 200, 425, 255, 0, 0);
-    drawText("Player Blue", GLUT_BITMAP_TIMES_ROMAN_24, 370, 425, 0, 0, 255);
+    drawText("Player 1", GLUT_BITMAP_TIMES_ROMAN_24, 200, 425, 255, 0, 0);
+    drawText("Player 2", GLUT_BITMAP_TIMES_ROMAN_24, 370, 425, 0, 0, 255);
 
     drawText(pemain1, GLUT_BITMAP_TIMES_ROMAN_24, 145, 430, 255, 0, 0);
     drawText(pemain2, GLUT_BITMAP_TIMES_ROMAN_24, 485, 430, 0, 0, 255);

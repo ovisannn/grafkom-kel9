@@ -18,6 +18,7 @@ bool move2_atas;
 bool move2_bawah;
 
 bool menuKey;
+bool backKey;
 
 //player collider
 //1 untuk player 1 dan 2 untuk player 2
@@ -150,12 +151,15 @@ static void player1_Key(int key, int x, int y)
         case GLUT_KEY_F1:
             menuKey = TRUE;
             break;
+        case GLUT_KEY_F2:
+            backKey = TRUE;
+            break;
         }
     }
 
 void players(){
         glPushMatrix();
-            glColor3ub(255, 0, 0);
+            glColor3ub(0, 0, 255);
             //glTranslatef(sx, sy, 0);
             grapichPlayer(
                 Ax_1, Ay_1,
@@ -165,7 +169,7 @@ void players(){
         glPopMatrix();
 
         glPushMatrix();
-            glColor3f(0, 0, 255);
+            glColor3f(255, 0, 0);
             //glTranslatef(kx, ky, 0);
             grapichPlayer(
                 Ax_2, Ay_2,

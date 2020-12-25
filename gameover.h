@@ -2,6 +2,8 @@
 #define GAMEOVER_H_INCLUDED
 
 void hurufp1(){
+    //glClearColor(10,10,10,10);
+    //glClear(GL_COLOR_BUFFER_BIT);
     glLineWidth(25);
     //warna biru merah
     glBegin(GL_POLYGON);
@@ -74,8 +76,13 @@ void hurufp1(){
 	glVertex2f(420, 240);
 	glEnd();
 
+    glFlush();
+    glutSwapBuffers();
+
 }
 void hurufp2(){
+    //glClearColor(10,10,10,10);
+    //glClear(GL_COLOR_BUFFER_BIT);
     //warna merah biru
     glBegin(GL_POLYGON);
     glColor3ub(232, 81, 96);
@@ -150,6 +157,11 @@ void hurufp2(){
 	glVertex2f(420, 240);
 	glEnd();
 
+    glFlush();
+    glutSwapBuffers();
+
 }
+
+
 
 #endif // GAMEOVER_H_INCLUDED

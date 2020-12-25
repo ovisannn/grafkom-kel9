@@ -25,6 +25,8 @@ bola bola1;
 int timer;
 int realTime;
 
+int gameTime = 5;
+
 
 //bool menuKey;
 //menuKey = FALSE;
@@ -44,51 +46,53 @@ void ball_player_interaction()
 
 static void display(void)
 {
-    //menuKey = FALSE;
+
+    if (menuKey) {
+        if(realTime < gameTime){
+            //BACKGROUND
+            glClearColor(10,10,10,10);
+            glClear(GL_COLOR_BUFFER_BIT);
+
+            teks();
+            //drawText(realTime, GLUT_BITMAP_TIMES_ROMAN_24, 385, 430, 0, 0, 255);
+            waktuuuuu();
+            lapangan();
+            garis_putih_lapangan();
+
+            bola1.bola_positionReset();
+            bola1.movement();
+            bola1.goal_logic();
+            papan_score();
+            //hurufp1();
+
+            //player
+            mainPlayer();
 
 
-    if (menuKey && realTime < 30) {
-        //BACKGROUND
-        glClearColor(10,10,10,10);
-        glClear(GL_COLOR_BUFFER_BIT);
-
-        teks();
-        //drawText(realTime, GLUT_BITMAP_TIMES_ROMAN_24, 385, 430, 0, 0, 255);
-        waktuuuuu();
-        lapangan();
-        garis_putih_lapangan();
-
-        bola1.bola_positionReset();
-        bola1.movement();
-        bola1.goal_logic();
-        papan_score();
-        //hurufp1();
-        hurufp2();
-        //player
-        mainPlayer();
-
-
-        glFlush();
-        glutSwapBuffers();
-
-    } else{
-        gameMenu();
+            glFlush();
+            glutSwapBuffers();
+        }
+    }else if(backKey){
+        exit(0);
+    } else {
+        if(realTime < gameTime){
+            gameMenu();
+        }
     }
 
-    timer+=1;
-    if(timer%3000 == 0 && menuKey){
-        realTime+=1;
-    cout << "waktu  : " << realTime<<endl;
-    }
-
-
-    if(realTime > 30){
+    if(realTime > gameTime){
         if (player1_score > player2_score){
-            //player 1 menang
-        } if(player1_score < player2_score){
-            //player 2 menamg
+            hurufp1();
+        }else if(player1_score < player2_score){
+            hurufp2();
         }else{
-            //drow
+            hurufp2();
+        }
+    }else{
+        timer+=1;
+        if(timer%3000 == 0 && menuKey){
+            realTime+=1;
+            cout << "waktu  : " << realTime<<endl;
         }
     }
 
