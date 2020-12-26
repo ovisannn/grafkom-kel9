@@ -1,7 +1,7 @@
 #ifndef MENU_H_INCLUDED
 #define MENU_H_INCLUDED
 
-
+#include "drow_teks.h"
 
 
 
@@ -114,6 +114,7 @@ void gameMenu(){
     glClearColor(10,10,10,10);
     glClear(GL_COLOR_BUFFER_BIT);
 
+    drawText("Press F2", GLUT_BITMAP_TIMES_ROMAN_24, 150, 285, 255, 0, 0);
     glPushMatrix();
         glColor3ub(0, 0, 0);
         glTranslatef(20, 15, 0);
@@ -121,7 +122,7 @@ void gameMenu(){
         play();
 	glPopMatrix();
 
-
+    drawText("Press F1", GLUT_BITMAP_TIMES_ROMAN_24, 150, 210, 0, 255, 0);
     glPushMatrix();
         glColor3ub(0, 0, 0);
         glTranslatef(20, 90, 0);

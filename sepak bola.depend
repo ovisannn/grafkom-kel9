@@ -257,7 +257,7 @@
 
 1606006909 d:\kuliah & tugasnya\.semester 3 -unej-\grafkom\project game\grafkom-kel9\bola_mechanic.h
 
-1608909880 source:f:\kuliah luuuur\tugas kuliah\semester 3\grafika komputer (pr)\grafkom-kel9\main.cpp
+1608950286 source:f:\kuliah luuuur\tugas kuliah\semester 3\grafika komputer (pr)\grafkom-kel9\main.cpp
 	<math.h>
 	<GLUT/glut.h>
 	<GL/glut.h>
@@ -306,9 +306,10 @@
 
 1608887627 f:\kuliah luuuur\tugas kuliah\semester 3\grafika komputer (pr)\grafkom-kel9\papan_score.h
 
-1608908196 f:\kuliah luuuur\tugas kuliah\semester 3\grafika komputer (pr)\grafkom-kel9\menu.h
+1608950532 f:\kuliah luuuur\tugas kuliah\semester 3\grafika komputer (pr)\grafkom-kel9\menu.h
+	"drow_teks.h"
 
-1608905936 f:\kuliah luuuur\tugas kuliah\semester 3\grafika komputer (pr)\grafkom-kel9\drow_teks.h
+1608950367 f:\kuliah luuuur\tugas kuliah\semester 3\grafika komputer (pr)\grafkom-kel9\drow_teks.h
 	<fstream>
 	<winuser.h>
 	<string>
@@ -354,5 +355,5 @@
 
 1608914624 d:\kuliah\semester3\project kelompok\grafkomasli\grafkom-kel9\gameover.h
 
-1608905770 f:\kuliah luuuur\tugas kuliah\semester 3\grafika komputer (pr)\grafkom-kel9\gameover.h
+1608916729 f:\kuliah luuuur\tugas kuliah\semester 3\grafika komputer (pr)\grafkom-kel9\gameover.h
 

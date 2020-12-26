@@ -80,6 +80,8 @@ void teks(){
     //drawText(waktu, GLUT_BITMAP_TIMES_ROMAN_24, 285, 430, 0, 0, 255);
 }
 
-
+void teksMenu(){
+    //drawText("Press F1", GLUT_BITMAP_TIMES_ROMAN_24, 50, 50, 255, 0, 0);
+}
 
 #endif // DROW_TEKS_H_INCLUDED

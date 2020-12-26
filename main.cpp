@@ -25,7 +25,7 @@ bola bola1;
 int timer;
 int realTime;
 
-int gameTime = 10;
+int gameTime = 11;
 
 
 //bool menuKey;
@@ -77,6 +77,7 @@ static void display(void)
     } else {
         if(realTime < gameTime){
             gameMenu();
+            teksMenu();
         }
     }
 
